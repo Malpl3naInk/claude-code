@@ -19,7 +19,6 @@
     "@anthropic-ai/mcpb": "file:./stubs/@anthropic-ai/mcpb",
     "@anthropic-ai/sandbox-runtime": "file:./stubs/@anthropic-ai/sandbox-runtime",
     "@anthropic-ai/sdk": "^0.39.0",
-    "color-diff-napi": "file:./stubs/color-diff-napi",
     "@aws-sdk/client-bedrock-runtime": "^3.700.0",
     "commander": "~13.1.0",
     "@commander-js/extra-typings": "^13.0.0",
@@ -103,6 +102,5 @@
     "@anthropic-ai/mcpb": "file:./stubs/@anthropic-ai/mcpb",
     "@anthropic-ai/sandbox-runtime": "file:./stubs/@anthropic-ai/sandbox-runtime",
     "@anthropic-ai/claude-agent-sdk": "file:./stubs/@anthropic-ai/claude-agent-sdk",
-    "color-diff-napi": "file:./stubs/color-diff-napi"
   }
 }
