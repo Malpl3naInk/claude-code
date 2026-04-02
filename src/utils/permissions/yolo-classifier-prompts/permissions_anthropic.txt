@@ -1,0 +1,3 @@
+# Permissions Anthropic Prompt
+
+This is a stub prompt for anthropic permissions.

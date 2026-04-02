@@ -1,0 +1,3 @@
+# Permissions External Prompt
+
+This is a stub prompt for external permissions.

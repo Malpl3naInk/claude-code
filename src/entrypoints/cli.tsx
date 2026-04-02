@@ -1,5 +1,18 @@
 import { feature } from 'src/_stubs/bun-bundle.js';
 
+// Define MACRO for bun build --target=bun (globals.ts preload doesn't apply to builds)
+if (typeof (globalThis as any).MACRO === 'undefined') {
+  (globalThis as any).MACRO = {
+    VERSION: '2.0.0',
+    BUILD_TIME: new Date().toISOString(),
+    PACKAGE_URL: '@anthropic-ai/claude-code',
+    NATIVE_PACKAGE_URL: '@anthropic-ai/claude-code-native',
+    FEEDBACK_CHANNEL: 'https://github.com/anthropics/claude-code/issues',
+    ISSUES_EXPLAINER: 'Report issues at https://github.com/anthropics/claude-code/issues',
+    VERSION_CHANGELOG: '',
+  };
+}
+
 // Bugfix for corepack auto-pinning, which adds yarnpkg to peoples' package.jsons
 // eslint-disable-next-line custom-rules/no-top-level-side-effects
 process.env.COREPACK_ENABLE_AUTO_PIN = '0';
